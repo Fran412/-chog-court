@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chog Court</title>
+<meta name="description" content="Your Chog is your legal identity. Judge the internet's worst disputes and build a verdict record that travels with the token.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <h1 class="wordmark">Chog Court</h1>
+  <div class="wallet" id="wallet"></div>
+</header>
+
+<section class="bench" id="bench" aria-label="Your Chog on the bench"></section>
+
+<nav class="tabs" id="tabs" aria-label="Sections">
+  <button data-view="docket" class="on">Docket</button>
+  <button data-view="case">Case file</button>
+  <button data-view="roll">Roll</button>
+</nav>
+
+<main id="app" data-view="docket">
+  <section class="ledger" id="docket" aria-label="Docket"></section>
+  <section class="casefile" id="casefile" aria-live="polite" aria-label="Case file"></section>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="config.js"></script>
+<script src="cases.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
